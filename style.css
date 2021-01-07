@@ -1,0 +1,89 @@
+body {
+    height: 100%;
+    background: url(https://bit.ly/xylophone-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10vh;
+}
+
+#xylophone-logo {
+    display: block;
+    min-width: 60vh;
+    width: 50vh;
+}
+
+#logo {
+    min-width: 25vh;
+    width: 20vh;
+
+}
+
+#notes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60vh;
+    margin: 15vh 0;
+}
+
+.note {
+    background-color: white;
+    border-radius: 2vh;
+    height: 40vh;
+    width: 10vh;
+    margin: 0 1.5vh;
+box-shadow:  -1vh 1vh 2vh #171819, 
+1vh -1vh 2vh #2d3031;
+}
+
+.note:hover {
+    transform: scale(1.1);
+}
+
+#note1 {
+    background-color: crimson;
+}
+
+#note2 {
+    background-color: orangered;
+}
+
+#note3 {
+    background-color: gold;
+}
+
+#note4 {
+    background-color: yellowgreen;
+}
+
+#note5 {
+    background-color: royalblue;
+}
+
+#note6 {
+    background-color: deepskyblue;
+}
+
+#note7 {
+    background-color: darkviolet;
+}
+
+#note8 {
+    background-color: deeppink;
+}
+
+@media only screen and (max-width: 90vh) {
+
+    #notes-container {
+        flex-direction: column;
+        margin: 3vh 0;
+    }
+
+    .note {
+        border-radius: 3vh;
+        height: 6vh;
+        width: 50vh;
+        margin: 1vh 0;
+    }
+
+}
